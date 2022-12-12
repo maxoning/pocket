@@ -22,7 +22,9 @@ class LoadUtils {
             m.load("MainSpritesheet.atlas", TextureAtlas::class.java)
 
             // Skins:
-            m.load("MainSpriteSheet.skin", Skin::class.java, SkinLoader.SkinParameter("MainSpritesheet.atlas"))
+            m.load("MainSpritesheet.skin", Skin::class.java, SkinLoader.SkinParameter("MainSpritesheet.atlas"))
+
+            m.finishLoading()
         }
     }
 }
