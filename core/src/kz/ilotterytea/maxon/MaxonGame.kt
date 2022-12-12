@@ -1,32 +1,27 @@
 package kz.ilotterytea.maxon
 
-import com.badlogic.gdx.ApplicationAdapter
-import com.badlogic.gdx.graphics.Texture
+import com.badlogic.gdx.Game
+import com.badlogic.gdx.assets.AssetManager
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
-import com.badlogic.gdx.utils.ScreenUtils
+import kz.ilotterytea.maxon.screens.SplashScreen
 
 /**
  * Main game.
  * @since a_1.0
  */
-class MaxonGame : ApplicationAdapter() {
+class MaxonGame : Game() {
     lateinit var batch: SpriteBatch
-    lateinit var img: Texture
+    lateinit var assets: AssetManager
 
     override fun create() {
         batch = SpriteBatch()
-        img = Texture("badlogic.jpg")
-    }
+        assets = AssetManager()
 
-    override fun render() {
-        ScreenUtils.clear(1f, 0f, 0f, 1f)
-        batch.begin()
-        batch.draw(img, 0f, 0f)
-        batch.end()
+        this.screen = SplashScreen(this)
     }
 
     override fun dispose() {
         batch.dispose()
-        img.dispose()
+        assets.dispose()
     }
 }
