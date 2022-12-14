@@ -84,7 +84,7 @@ class ChessBackground(
                     }
 
                     array.remove(tile)
-                    array[0] = tile
+                    array.add(0, tile)
                 }
 
                 if (!outYSprites.contains(array) && tile.y > screenHeight) {
@@ -106,6 +106,11 @@ class ChessBackground(
                     tile.drawable = tiles[0][index].drawable
                 }
             }
+
+            tiles.remove(array)
+            tiles.add(0, array)
         }
+
+        outYSprites.clear()
     }
 }
