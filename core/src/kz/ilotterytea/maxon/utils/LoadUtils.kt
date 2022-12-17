@@ -2,6 +2,7 @@ package kz.ilotterytea.maxon.utils
 
 import com.badlogic.gdx.assets.AssetManager
 import com.badlogic.gdx.assets.loaders.SkinLoader
+import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.TextureAtlas
 import com.badlogic.gdx.scenes.scene2d.ui.Skin
 
@@ -23,6 +24,9 @@ class LoadUtils {
 
             // Skins:
             m.load("MainSpritesheet.skin", Skin::class.java, SkinLoader.SkinParameter("MainSpritesheet.atlas"))
+
+            // Playables:
+            m.load("playables/Maxon.png", Texture::class.java)
 
             m.finishLoading()
         }
