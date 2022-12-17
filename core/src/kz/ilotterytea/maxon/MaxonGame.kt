@@ -5,6 +5,8 @@ import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Preferences
 import com.badlogic.gdx.assets.AssetManager
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
+import kz.ilotterytea.maxon.items.ItemRegistrar
+import kz.ilotterytea.maxon.items.PurchasableItem
 import kz.ilotterytea.maxon.screens.SplashScreen
 import kz.ilotterytea.maxon.utils.I18N
 
@@ -20,6 +22,8 @@ class MaxonGame : Game() {
     lateinit var prefs: Preferences
     lateinit var sav: Preferences
 
+    lateinit var items: ItemRegistrar<PurchasableItem>
+
     override fun create() {
         batch = SpriteBatch()
         assets = AssetManager()
@@ -28,6 +32,8 @@ class MaxonGame : Game() {
         sav = Gdx.app.getPreferences("MaxoningLatest")
 
         i18n = I18N(Gdx.files.internal("langs"), prefs.getString("language", "en_us"))
+
+        items = ItemRegistrar()
 
         this.screen = SplashScreen(this)
     }
