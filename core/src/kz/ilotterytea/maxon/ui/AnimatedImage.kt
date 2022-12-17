@@ -5,13 +5,9 @@ import com.badlogic.gdx.scenes.scene2d.ui.Image
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable
 
 /** Make the image animated! */
-class AnimatedImage(val textures: List<TextureRegion>) : Image() {
+class AnimatedImage(val textures: List<TextureRegion>) : Image(textures[0]) {
     private var index = 0
     var stopAnimation = false
-
-    init {
-        super.setDrawable(TextureRegionDrawable(textures[0]))
-    }
 
     override fun act(delta: Float) {
         super.act(delta)
