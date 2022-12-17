@@ -1,0 +1,12 @@
+{
+  "$name": "English",
+  "$region": "United States",
+
+  "menu.new_game": "New Game!",
+  "menu.continue": "Continue",
+
+  "game.board.points": "%s pts.",
+  "game.board.multiplier": "x%s/tap",
+
+  "game.earned_points": "{{RAINBOW}}+%s pts.{{ENDRAINBOW}}"
+}
