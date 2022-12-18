@@ -46,7 +46,7 @@ class LoadUtils {
             m.load("purchasables/screamcat.png", Texture::class.java)
             m.load("purchasables/succat.png", Texture::class.java)
             m.load("purchasables/thirsty_cat.png", Texture::class.java)
-            m.load("purchasables/tv_cat.png", Texture::class.java)
+            m.load("purchasables/tvcat.png", Texture::class.java)
 
             m.finishLoading()
         }
@@ -149,7 +149,7 @@ class LoadUtils {
                 PurchasableItem(
                     "hellcat",
                     AnimatedImage(
-                        SpriteUtils.splitSpritesheet(m.get("purchasables/hellcat.png"), 112, 112)
+                        SpriteUtils.splitSpritesheet(m.get("purchasables/hellcat.png"), 128, 128)
                     ),
                     167772160,
                     5764801
@@ -171,7 +171,7 @@ class LoadUtils {
                 PurchasableItem(
                     "piano_cat",
                     AnimatedImage(
-                        SpriteUtils.splitSpritesheet(m.get("purchasables/piano_cat.png"), 112, 112)
+                        SpriteUtils.splitSpritesheet(m.get("purchasables/piano_cat.png"), 128, 128)
                     ),
                     10737418240,
                     282475249
@@ -215,7 +215,7 @@ class LoadUtils {
                 PurchasableItem(
                     "sucking_cat",
                     AnimatedImage(
-                        SpriteUtils.splitSpritesheet(m.get("purchasables/sucking_cat.png"), 112, 112)
+                        SpriteUtils.splitSpritesheet(m.get("purchasables/succat.png"), 128, 128)
                     ),
                     43980465111040,
                     678223072849
