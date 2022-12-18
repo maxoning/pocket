@@ -63,8 +63,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/bror.png"), 112, 112)
                     ),
-                    150,
-                    15
+                    10,
+                    1
                 )
             )
             // - - -  SANDWICH CAT - - - :
@@ -74,8 +74,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/sandwich_cat.png"), 112, 112)
                     ),
-                    450,
-                    45
+                    80,
+                    7
                 )
             )
             // - - -  MANLOOSHKA - - - :
@@ -85,8 +85,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/manlooshka.png"), 112, 112)
                     ),
-                    1350,
-                    135
+                    640,
+                    49
                 )
             )
             // - - -  THIRSTY CAT - - - :
@@ -96,8 +96,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/thirsty_cat.png"), 112, 112)
                     ),
-                    4050,
-                    405
+                    5120,
+                    343
                 )
             )
             // - - -  FURIOS CAT - - - :
@@ -107,8 +107,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/furios_cat.png"), 112, 112)
                     ),
-                    12150,
-                    1215
+                    40960,
+                    2401
                 )
             )
             // - - -  TV CAT - - - :
@@ -118,8 +118,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/tvcat.png"), 112, 112)
                     ),
-                    36450,
-                    3645
+                    327680,
+                    16807
                 )
             )
             // - - -  PROGRAMMER CAT - - - :
@@ -129,8 +129,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/progcat.png"), 112, 112)
                     ),
-                    109350,
-                    10935
+                    2621440,
+                    117649
                 )
             )
             // - - -  SCREAMING CAT - - - :
@@ -140,8 +140,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/screamcat.png"), 112, 112)
                     ),
-                    328050,
-                    32805
+                    20971520,
+                    823543
                 )
             )
             // - - -  HELL CAT - - - :
@@ -151,8 +151,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/hellcat.png"), 112, 112)
                     ),
-                    984150,
-                    98415
+                    167772160,
+                    5764801
                 )
             )
             // - - -  LURKER - - - :
@@ -162,8 +162,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/lurker.png"), 112, 112)
                     ),
-                    2952450,
-                    295245
+                    1342177280,
+                    40353607
                 )
             )
             // - - -  PIANO CAT - - - :
@@ -173,8 +173,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/piano_cat.png"), 112, 112)
                     ),
-                    8857350,
-                    885735
+                    10737418240,
+                    282475249
                 )
             )
             // - - -  BEE CAT - - - :
@@ -184,8 +184,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/bee_cat.png"), 112, 112)
                     ),
-                    26572050,
-                    2657205
+                    85899345920,
+                    1977326743
                 )
             )
             // - - -  BUSINESS CAT - - - :
@@ -195,8 +195,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/busy.png"), 112, 112)
                     ),
-                    79716150,
-                    7971615
+                    687194767360,
+                    13841287201
                 )
             )
             // - - -  AEAE - - - :
@@ -206,8 +206,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/aeae.png"), 112, 112)
                     ),
-                    239148450,
-                    23914845
+                    5497558138880,
+                    96889010407
                 )
             )
             // - - -  SUCKING CAT - - - :
@@ -217,8 +217,8 @@ class LoadUtils {
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/sucking_cat.png"), 112, 112)
                     ),
-                    100,
-                    1
+                    43980465111040,
+                    678223072849
                 )
             )
         }
