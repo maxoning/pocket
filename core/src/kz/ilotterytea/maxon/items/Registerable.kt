@@ -8,6 +8,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Image
  * @since a_1.0
  */
 interface Registerable {
+    val num_id: Int
     val name_id: String
     val icon: Image
 }
