@@ -51,6 +51,7 @@ class SplashScreen(val game: MaxonGame) : Screen {
         bar.value = bar.maxValue / (game.assets.queuedAssets + 1)
 
         if (game.assets.update()) {
+            LoadUtils.loadPurchasableItems(game.assets, game.items)
             game.screen = MenuScreen(game)
         }
     }
