@@ -24,7 +24,11 @@
     tile_04: { color: { hex: "#00ff00ff" }, name: tile },
     tile_05: { color: { hex: "#222222ff" }, name: tile },
 
-    board: { color: { hex: "#00000055" }, name: tile },
+    board: { color: { hex: "#ba7316ff" }, name: s_g_up },
+    board-d: { color: { hex: "#ba7316ff" }, name: s_gd_up },
+    board-bg: { color: { hex: "#b06437ff" }, name: s_up },
+    board-bg-2: { color: { hex: "#764328ff" }, name: s_up },
+
     window: { color: { hex: "#00000055" }, name: bg },
 
     fill_circle: { color: { hex: "#00ff00ff" }, name: circle }

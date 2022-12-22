@@ -8,7 +8,13 @@
   "game.board.points": "%s pts.",
   "game.board.multiplier": "x%s/tap",
 
-  "game.earned_points": "{{RAINBOW}}+%s pts.{{ENDRAINBOW}}",
+  "game.earned_points": "%s",
+  "game.earned_points.effect": "{RAINBOW}%s{ENDRAINBOW}",
+
+  "shop.price": "%s pts.",
+  "shop.multiplier": "+%s/tap",
+
+  "inventory.amount": "Amount: %s",
 
   "pet.bror.name": "Sleepy bror",
   "pet.bror.desc": "A falling asleep Bror will help you to pet Maxon almost to besvimers",
