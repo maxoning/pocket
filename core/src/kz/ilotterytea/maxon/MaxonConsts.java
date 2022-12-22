@@ -1,6 +1,6 @@
 package kz.ilotterytea.maxon;
 
-import kz.ilotterytea.maxon.items.PurchasableItem;
+import com.badlogic.gdx.Gdx;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -23,4 +23,5 @@ public class MaxonConsts {
 
     // Other:
     public static final long START_TIME = System.currentTimeMillis();
+    public static final int SCALE_FACTOR = Gdx.graphics.getHeight() / Gdx.graphics.getWidth();
 }

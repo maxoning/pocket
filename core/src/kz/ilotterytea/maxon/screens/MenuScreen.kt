@@ -16,6 +16,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener
 import com.badlogic.gdx.utils.Align
 import com.badlogic.gdx.utils.viewport.FillViewport
+import kz.ilotterytea.maxon.MaxonConsts
 import kz.ilotterytea.maxon.MaxonGame
 import kz.ilotterytea.maxon.ui.ChessBackground
 
@@ -24,7 +25,7 @@ import kz.ilotterytea.maxon.ui.ChessBackground
  * @since a_1.0
  */
 class MenuScreen(val game: MaxonGame) : Screen {
-    private val stage   = Stage(FillViewport(Gdx.graphics.width.toFloat() / 2f, Gdx.graphics.height.toFloat() / 2f), game.batch)
+    private val stage   = Stage(FillViewport(Gdx.graphics.width.toFloat() / MaxonConsts.SCALE_FACTOR, Gdx.graphics.height.toFloat() / MaxonConsts.SCALE_FACTOR), game.batch)
     private val skin    = game.assets.get("MainSpritesheet.skin", Skin::class.java)
 
     private val brand   = game.assets.get("BrandSpritesheet.atlas", TextureAtlas::class.java)

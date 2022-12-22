@@ -36,7 +36,7 @@ import kz.ilotterytea.maxon.utils.StringUtils
  * @since a_1.0
  */
 class GameScreen(val game: MaxonGame) : Screen {
-    private val stage = Stage(FillViewport(Gdx.graphics.width.toFloat() / 2f, Gdx.graphics.height.toFloat() / 2f))
+    private val stage = Stage(FillViewport(Gdx.graphics.width.toFloat() / MaxonConsts.SCALE_FACTOR, Gdx.graphics.height.toFloat() / MaxonConsts.SCALE_FACTOR))
     private val skin = game.assets.get("MainSpritesheet.skin", Skin::class.java)
 
     private val main = game.assets.get("MainSpritesheet.atlas", TextureAtlas::class.java)
