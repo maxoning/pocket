@@ -30,9 +30,14 @@
     fill_circle: { color: { hex: "#00ff00ff" }, name: circle }
   }
   com.badlogic.gdx.graphics.g2d.BitmapFont: {
+    halffull: {
+      file: fnt/MaxonGogono.fnt,
+      scaledSize: 32
+    },
+
     default: {
       file: fnt/MaxonGogono.fnt,
-      scaledSize: 24
+      scaledSize: 28
     },
 
     small: {
@@ -52,6 +57,7 @@
   },
   com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
     default: { font: default, fontColor: lightgrey },
+    halffull-default: { font: halffull, fontColor: lightgrey}
     small-default: { font: small, fontColor: lightgrey }
     small-pixeled: { font: s-pixeled, fontColor: lightgrey }
     value: { font: default, fontColor: yellow }
