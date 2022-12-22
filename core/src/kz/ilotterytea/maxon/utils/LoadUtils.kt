@@ -59,6 +59,7 @@ class LoadUtils {
             // - - -  BROR - - - :
             i.register(
                 PurchasableItem(
+                    1,
                     "bror",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/bror.png"), 112, 112)
@@ -70,6 +71,7 @@ class LoadUtils {
             // - - -  SANDWICH CAT - - - :
             i.register(
                 PurchasableItem(
+                    2,
                     "sandwich_cat",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/sandwich_cat.png"), 112, 112)
@@ -81,6 +83,7 @@ class LoadUtils {
             // - - -  MANLOOSHKA - - - :
             i.register(
                 PurchasableItem(
+                    3,
                     "manlooshka",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/manlooshka.png"), 112, 112)
@@ -92,6 +95,7 @@ class LoadUtils {
             // - - -  THIRSTY CAT - - - :
             i.register(
                 PurchasableItem(
+                    4,
                     "thirsty_cat",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/thirsty_cat.png"), 112, 112)
@@ -103,6 +107,7 @@ class LoadUtils {
             // - - -  FURIOS CAT - - - :
             i.register(
                 PurchasableItem(
+                    5,
                     "furios_cat",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/furios_cat.png"), 112, 112)
@@ -114,6 +119,7 @@ class LoadUtils {
             // - - -  TV CAT - - - :
             i.register(
                 PurchasableItem(
+                    6,
                     "tv_cat",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/tvcat.png"), 112, 112)
@@ -125,6 +131,7 @@ class LoadUtils {
             // - - -  PROGRAMMER CAT - - - :
             i.register(
                 PurchasableItem(
+                    7,
                     "code_cat",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/progcat.png"), 112, 112)
@@ -136,6 +143,7 @@ class LoadUtils {
             // - - -  SCREAMING CAT - - - :
             i.register(
                 PurchasableItem(
+                    8,
                     "scream_cat",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/screamcat.png"), 112, 112)
@@ -147,6 +155,7 @@ class LoadUtils {
             // - - -  HELL CAT - - - :
             i.register(
                 PurchasableItem(
+                    9,
                     "hellcat",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/hellcat.png"), 128, 128)
@@ -158,6 +167,7 @@ class LoadUtils {
             // - - -  LURKER - - - :
             i.register(
                 PurchasableItem(
+                    10,
                     "lurker",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/lurker.png"), 112, 112)
@@ -169,6 +179,7 @@ class LoadUtils {
             // - - -  PIANO CAT - - - :
             i.register(
                 PurchasableItem(
+                    11,
                     "piano_cat",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/piano_cat.png"), 128, 128)
@@ -180,6 +191,7 @@ class LoadUtils {
             // - - -  BEE CAT - - - :
             i.register(
                 PurchasableItem(
+                    12,
                     "bee_cat",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/bee_cat.png"), 112, 112)
@@ -191,6 +203,7 @@ class LoadUtils {
             // - - -  BUSINESS CAT - - - :
             i.register(
                 PurchasableItem(
+                    13,
                     "business_cat",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/busy.png"), 112, 112)
@@ -202,6 +215,7 @@ class LoadUtils {
             // - - -  AEAE - - - :
             i.register(
                 PurchasableItem(
+                    14,
                     "aeae",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/aeae.png"), 112, 112)
@@ -213,6 +227,7 @@ class LoadUtils {
             // - - -  SUCKING CAT - - - :
             i.register(
                 PurchasableItem(
+                    15,
                     "sucking_cat",
                     AnimatedImage(
                         SpriteUtils.splitSpritesheet(m.get("purchasables/succat.png"), 128, 128)
