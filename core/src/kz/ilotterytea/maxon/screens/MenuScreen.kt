@@ -77,7 +77,7 @@ class MenuScreen(val game: MaxonGame) : Screen {
 
         playBtn.addListener(object : ClickListener() {
             override fun clicked(event: InputEvent?, x: Float, y: Float) {
-                super.clicked(event, x, y)
+                game.screen = GameScreen(game)
             }
         })
 
