@@ -280,7 +280,9 @@ class GameScreen(val game: MaxonGame) : Screen {
 
         for (id in itemId.sorted()) {
             if (game.items.registeredItems.containsKey(id)) {
-                mapIds.put(id, mapIds.getOrDefault(id, 0) + 1)
+                var value = mapIds[id]
+                if (value == null) value = 0
+                mapIds[id] = value + 1
             }
         }
 
