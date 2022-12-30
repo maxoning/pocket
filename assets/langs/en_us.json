@@ -2,7 +2,7 @@
   "$name": "English",
   "$region": "United States",
 
-  "menu.new_game": "New Game!",
+  "menu.new_game": "New Game",
   "menu.continue": "Continue",
 
   "game.board.points": "%s pts.",
@@ -11,9 +11,11 @@
   "game.earned_points": "%s",
   "game.earned_points.effect": "{RAINBOW}%s{ENDRAINBOW}",
 
+  "shop.title": "Shop",
   "shop.price": "%s pts.",
   "shop.multiplier": "+%s/tap",
 
+  "inventory.title": "Inventory",
   "inventory.amount": "Amount: %s",
 
   "pet.bror.name": "Sleepy bror",
