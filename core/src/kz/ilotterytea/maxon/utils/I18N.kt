@@ -60,6 +60,18 @@ class I18N(fh: FileHandle, var default_lang_id: String) {
         return res.toString()
     }
 
+    /**
+     * Change the current language to the next language.
+     */
+    fun changeToNextLanguage() {
+        var index = languages.keys.indexOf(default_lang_id)
+        index++
+
+        if (index > languages.keys.size - 1) index = 0
+
+        default_lang_id = languages.keys.toList()[index]
+    }
+
     /** Process locale file. */
     private fun processLocaleFile(filehandle: FileHandle) {
         Gdx.app.debug("I18N", "Starting to process the ${filehandle.nameWithoutExtension()} file...")
