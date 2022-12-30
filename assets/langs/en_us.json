@@ -4,6 +4,7 @@
 
   "menu.new_game": "New Game",
   "menu.continue": "Continue",
+  "menu.reset": "Reset",
 
   "game.board.points": "%s pts.",
   "game.board.multiplier": "x%s/tap",

@@ -4,6 +4,7 @@
 
   "menu.new_game": "Новая игра",
   "menu.continue": "Продолжить",
+  "menu.reset": "Сбросить",
 
   "game.board.points": "%s б.",
   "game.board.multiplier": "x%s/нажатие",

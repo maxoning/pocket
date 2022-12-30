@@ -73,7 +73,10 @@ class MenuScreen(val game: MaxonGame) : Screen {
         table.pad(16f)
         stage.addActor(table)
 
-        val playBtn = TextButton("Play!", skin)
+        val playBtn = TextButton(game.i18n.text("menu.new_game"), skin)
+        if (game.sav.get().keys.size >= 1) {
+            playBtn.setText(game.i18n.text("menu.continue"))
+        }
 
         playBtn.addListener(object : ClickListener() {
             override fun clicked(event: InputEvent?, x: Float, y: Float) {
@@ -94,7 +97,20 @@ class MenuScreen(val game: MaxonGame) : Screen {
             }
         })
 
-        additionalBtnsTable.add(langBtn).width(table.width -8f).pad(8f)
+        additionalBtnsTable.add(langBtn).width((table.width / 2f) - 8f).pad(8f)
+
+        val resetBtn = TextButton(game.i18n.text("menu.reset"), skin)
+
+        resetBtn.addListener(object : ClickListener() {
+            override fun clicked(event: InputEvent?, x: Float, y: Float) {
+                game.sav.clear()
+                game.sav.flush()
+
+                game.screen = MenuScreen(game)
+            }
+        })
+
+        additionalBtnsTable.add(resetBtn).width((table.width / 2f) - 8f).pad(8f)
 
         table.add(additionalBtnsTable).row()
 
