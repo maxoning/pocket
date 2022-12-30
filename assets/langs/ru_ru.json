@@ -1,0 +1,51 @@
+{
+  "$name": "Русский",
+  "$region": "Россия",
+
+  "menu.new_game": "Новая игра",
+  "menu.continue": "Продолжить",
+
+  "game.board.points": "%s б.",
+  "game.board.multiplier": "x%s/нажатие",
+
+  "game.earned_points": "%s",
+  "game.earned_points.effect": "{RAINBOW}%s{ENDRAINBOW}",
+
+  "shop.title": "Магазин",
+  "shop.price": "%s б.",
+  "shop.multiplier": "+%s/нажатие",
+
+  "inventory.title": "Инвентарь",
+  "inventory.amount": "Куплено: %s",
+
+  "pet.bror.name": "Засыпающий Брор",
+  "pet.bror.desc": "A falling asleep Bror will help you to pet Maxon almost to besvimers",
+  "pet.sandwich_cat.name": "Кот-бутерброд",
+  "pet.sandwich_cat.desc": "Even though his head is shielded from the light by bread, he can still to pet Maxon by his cheeks.",
+  "pet.manlooshka.name": "Манлушка",
+  "pet.manlooshka.desc": "*ррррр*",
+  "pet.thirsty_cat.name": "Жаждущий кот",
+  "pet.thirsty_cat.desc": "Every time the kitty drinks water, drops of spilled water fall on the screen and pet Maxon's dry cheeks.",
+  "pet.furios_cat.name": "Яростный кот",
+  "pet.furios_cat.desc": "Petting FURIOSLY !!!",
+  "pet.tv_cat.name": "Телевизионный кот",
+  "pet.tv_cat.desc": "Just a funny cat playing with the TV",
+  "pet.code_cat.name": "Кот-программист",
+  "pet.code_cat.desc": "Using his programming skills, he developed software to pet Maxon more efficiently.",
+  "pet.scream_cat.name": "Кричащий кот",
+  "pet.scream_cat.desc": "His scream is so loud, that it shakes Maxon's cheeks.",
+  "pet.hellcat.name": "Адский кот",
+  "pet.hellcat.desc": "Petting Maxon with POWER OF HELL !",
+  "pet.lurker.name": "Луркер",
+  "pet.lurker.desc": "Finds the best spots to pet Maxon in.",
+  "pet.piano_cat.name": "Кот-пианист",
+  "pet.piano_cat.desc": "Gives best pettings with his trained paws.",
+  "pet.bee_cat.name": "Кот-пчела",
+  "pet.bee_cat.desc": "Collects pollen from Maxon's cheeks.",
+  "pet.business_cat.name": "Деловой кот",
+  "pet.business_cat.desc": "Pets Maxon with help of all his influence.",
+  "pet.aeae.name": "Аеае",
+  "pet.aeae.desc": "back and forth, back and forth.",
+  "pet.sucking_cat.name": "Кот-сосун",
+  "pet.sucking_cat.desc": "Increases amount of petting with his sucking power."
+}
