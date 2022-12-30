@@ -99,7 +99,12 @@
     close: { up: close },
     delete: { up: delete },
     right_arrow: { up: right_arrow },
-    left_arrow: { up: left_arrow }
+    left_arrow: { up: left_arrow },
+
+    source_code: { up: source_code },
+    youtube: { up: youtube },
+    twitch: { up: twitch },
+    twitter: { up: twitter },
   },
 
   com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {

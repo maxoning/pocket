@@ -10,6 +10,7 @@ import com.badlogic.gdx.scenes.scene2d.Stage
 import com.badlogic.gdx.scenes.scene2d.actions.Actions
 import com.badlogic.gdx.scenes.scene2d.actions.RepeatAction
 import com.badlogic.gdx.scenes.scene2d.ui.Image
+import com.badlogic.gdx.scenes.scene2d.ui.ImageButton
 import com.badlogic.gdx.scenes.scene2d.ui.Skin
 import com.badlogic.gdx.scenes.scene2d.ui.Table
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton
@@ -116,7 +117,42 @@ class MenuScreen(val game: MaxonGame) : Screen {
 
         additionalBtnsTable.add(resetBtn).width((table.width / 2f) - 8f).pad(8f)
 
-        table.add(additionalBtnsTable).row()
+        table.add(additionalBtnsTable).width(table.width - 8f).row()
+
+        val socialTable = Table()
+        socialTable.align(Align.center)
+
+        val githubBtn = ImageButton(skin, "source_code")
+
+        githubBtn.addListener(object : ClickListener() {
+            override fun clicked(event: InputEvent?, x: Float, y: Float) {
+                Gdx.net.openURI("https://github.com/maxoning/pocket")
+            }
+        })
+
+        socialTable.add(githubBtn).pad(8f)
+
+        val youtubeBtn = ImageButton(skin, "youtube")
+
+        youtubeBtn.addListener(object : ClickListener() {
+            override fun clicked(event: InputEvent?, x: Float, y: Float) {
+                Gdx.net.openURI("https://www.youtube.com/channel/UCLBvMC3LikGT4yk4Adu95pA")
+            }
+        })
+
+        socialTable.add(youtubeBtn).pad(8f)
+
+        val twitchBtn = ImageButton(skin, "twitch")
+
+        twitchBtn.addListener(object : ClickListener() {
+            override fun clicked(event: InputEvent?, x: Float, y: Float) {
+                Gdx.net.openURI("https://twitch.tv/ilotterytea")
+            }
+        })
+
+        socialTable.add(twitchBtn).pad(8f)
+
+        table.add(socialTable).width(table.width - 8f)
 
         Gdx.input.inputProcessor = stage
         render(Gdx.graphics.deltaTime)
