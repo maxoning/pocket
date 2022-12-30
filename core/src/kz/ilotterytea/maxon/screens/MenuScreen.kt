@@ -93,6 +93,10 @@ class MenuScreen(val game: MaxonGame) : Screen {
         langBtn.addListener(object : ClickListener() {
             override fun clicked(event: InputEvent?, x: Float, y: Float) {
                 game.i18n.changeToNextLanguage()
+
+                game.prefs.putString("language", game.i18n.default_lang_id)
+                game.prefs.flush()
+
                 game.screen = MenuScreen(game)
             }
         })
