@@ -81,7 +81,22 @@ class MenuScreen(val game: MaxonGame) : Screen {
             }
         })
 
-        table.add(playBtn).width(256f).row()
+        table.add(playBtn).width(table.width - 8f).pad(8f).row()
+
+        val additionalBtnsTable = Table()
+
+        val langBtn = TextButton(game.i18n.format("\$name"), skin)
+
+        langBtn.addListener(object : ClickListener() {
+            override fun clicked(event: InputEvent?, x: Float, y: Float) {
+                game.i18n.changeToNextLanguage()
+                game.screen = MenuScreen(game)
+            }
+        })
+
+        additionalBtnsTable.add(langBtn).width(table.width -8f).pad(8f)
+
+        table.add(additionalBtnsTable).row()
 
         Gdx.input.inputProcessor = stage
         render(Gdx.graphics.deltaTime)
