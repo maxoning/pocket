@@ -43,12 +43,13 @@ class ChessBackground(
 
         Gdx.app.debug("${ChessBackground::class.simpleName}::Steps", "Total size of ${drawables.size} drawables: $totalDWidth x $totalDHeight")
 
-        var dIndex = 0
+        var dIndex: Int
 
         Gdx.app.debug("${ChessBackground::class.simpleName}::Steps", "Starting to generating the tiles...")
 
         for (h in 0..(screenHeight / totalDHeight + 3).toInt()) {
             tiles.add(mutableListOf())
+            dIndex = h % drawables.size
 
             for (w in -1..(screenWidth / totalDWidth).toInt()) {
                 if (dIndex + 1 > drawables.size) dIndex = 0
