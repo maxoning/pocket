@@ -59,7 +59,7 @@ class MenuScreen(val game: MaxonGame) : Screen {
                         ),
                         Actions.parallel(
                             Actions.rotateTo(10f, 10f, Interpolation.sine),
-                            Actions.scaleTo(1.25f, 1.25f, 10f, Interpolation.sine)
+                            Actions.scaleTo(1f, 1f, 10f, Interpolation.sine)
                         )
                     )
                 ))
