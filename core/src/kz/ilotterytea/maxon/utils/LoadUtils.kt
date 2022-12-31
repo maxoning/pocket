@@ -2,6 +2,8 @@ package kz.ilotterytea.maxon.utils
 
 import com.badlogic.gdx.assets.AssetManager
 import com.badlogic.gdx.assets.loaders.SkinLoader
+import com.badlogic.gdx.audio.Music
+import com.badlogic.gdx.audio.Sound
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.TextureAtlas
 import com.badlogic.gdx.scenes.scene2d.ui.Skin
@@ -48,7 +50,11 @@ class LoadUtils {
             m.load("purchasables/thirsty_cat.png", Texture::class.java)
             m.load("purchasables/tvcat.png", Texture::class.java)
 
-            m.finishLoading()
+            // Sounds:
+            m.load("sfx/cat/purr.ogg", Sound::class.java)
+
+            // Musics:
+            m.load("musics/menu/menu.ogg", Music::class.java)
         }
 
         /**

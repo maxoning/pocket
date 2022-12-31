@@ -2,6 +2,7 @@ package kz.ilotterytea.maxon.screens
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Screen
+import com.badlogic.gdx.audio.Sound
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.TextureAtlas
@@ -148,6 +149,7 @@ class GameScreen(val game: MaxonGame) : Screen {
         cat.addListener(object : ClickListener() {
             override fun clicked(event: InputEvent?, x: Float, y: Float) {
                 increasePoints()
+                game.assets.get("sfx/cat/purr.ogg", Sound::class.java).play(1f)
             }
         })
         stage.addActor(cat)

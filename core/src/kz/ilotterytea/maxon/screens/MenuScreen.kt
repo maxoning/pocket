@@ -2,6 +2,7 @@ package kz.ilotterytea.maxon.screens
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Screen
+import com.badlogic.gdx.audio.Music
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.g2d.TextureAtlas
 import com.badlogic.gdx.math.Interpolation
@@ -34,6 +35,8 @@ class MenuScreen(val game: MaxonGame) : Screen {
     private val bg = ChessBackground(
         1f, 1f, stage.width, stage.height, skin.getDrawable("tile_01"), skin.getDrawable("tile_02")
     )
+
+    private val music = game.assets.get("musics/menu/menu.ogg", Music::class.java)
 
     override fun show() {
         val logo = Image(brand.findRegion("brand"))
@@ -154,6 +157,10 @@ class MenuScreen(val game: MaxonGame) : Screen {
 
         table.add(socialTable).width(table.width - 8f)
 
+        music.isLooping = true
+        music.volume = 1f
+        music.play()
+
         Gdx.input.inputProcessor = stage
         render(Gdx.graphics.deltaTime)
     }
@@ -177,11 +184,10 @@ class MenuScreen(val game: MaxonGame) : Screen {
     }
 
     override fun pause() {
-        TODO("Not yet implemented")
     }
 
     override fun resume() {
-        TODO("Not yet implemented")
+
     }
 
     override fun hide() { dispose() }
