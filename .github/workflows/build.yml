@@ -24,13 +24,13 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build for android (release)
-        run: ./gradlew android:assembleRelease
+        run: ./gradlew android:assembleDebug
 
       - name: Sign APK file
         uses: r0adkll/sign-android-release@v1
         id: sign_apk
         with:
-          releaseDirectory: android/build/outputs/apk/release
+          releaseDirectory: android/build/outputs/apk/debug
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
@@ -74,6 +74,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: apks/android-release-unsigned-signed.apk
+          asset_path: apks/android-debug-unsigned-signed.apk
           asset_name: Maxoning.apk
           asset_content_type: application/vnd.android.package-archive
