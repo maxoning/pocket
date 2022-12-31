@@ -9,7 +9,7 @@
   "game.board.points": "%s pts.",
   "game.board.multiplier": "x%s/tap",
 
-  "game.earned_points": "%s",
+  "game.earned_points": "+%s",
   "game.earned_points.effect": "{RAINBOW}%s{ENDRAINBOW}",
 
   "shop.title": "Shop",

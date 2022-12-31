@@ -9,7 +9,7 @@
   "game.board.points": "%s б.",
   "game.board.multiplier": "x%s/нажатие",
 
-  "game.earned_points": "%s",
+  "game.earned_points": "+%s",
   "game.earned_points.effect": "{RAINBOW}%s{ENDRAINBOW}",
 
   "shop.title": "Магазин",
