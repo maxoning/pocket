@@ -188,7 +188,7 @@ class GameScreen(val game: MaxonGame) : Screen {
     }
 
     override fun resume() {
-        TODO("Not yet implemented")
+
     }
 
     override fun hide() { dispose() }

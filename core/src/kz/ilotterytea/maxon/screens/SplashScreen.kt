@@ -70,13 +70,9 @@ class SplashScreen(val game: MaxonGame) : Screen {
         stage.viewport.update(width, height)
     }
 
-    override fun pause() {
-        TODO("Not yet implemented")
-    }
+    override fun pause() {}
 
-    override fun resume() {
-        TODO("Not yet implemented")
-    }
+    override fun resume() {}
 
     override fun hide() { dispose() }
 
